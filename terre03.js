@@ -9,9 +9,12 @@ const n = process.argv.slice(2);
 function estComposeeDeChiffres(chaine) {
     // Utilisez une expression régulière pour vérifier si la chaîne ne contient que des chiffres.
     return /^[0-9]+$/.test(chaine);
-  }
-  
-if ( estComposeeDeChiffres(n)=false ) {
+}
+
+resultat=estComposeeDeChiffres(n);
+console.log(resultat);
+
+if ( resultat=false ) {
     console.log("erreur ce n'est pas un chiffre ou un nombre")
 }
   
@@ -24,7 +27,7 @@ let alphabet = '';
 
 
 //je la rempli
-for (let i = 97+n; i <= 122; i++) {
+for (let i = 97+nEntier; i <= 122; i++) {
   const letter = String.fromCharCode(i);
   alphabet += letter;
 }
